@@ -1,16 +1,88 @@
-<?php
-require "header.php";
-?>
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Header of the webpage  contains logos and reservation links -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">    
+    <title>Itali Restaurant</title>
+    
+    <!-- Stylesheets -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>                      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>           
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>            
+    </head>
 
+    <style>
+    .flex-column { 
+        max-width : 260px;
+    }
+            
+    .container {
+                background: #f9f9f9;
+            }
+        
+    .img {
+                margin: 5px;
+            }
+
+    .logo img{
+        width:150px;
+        height:250px;
+        margin-top:90px;
+        margin-bottom:40px;
+    }
+    </style>
+
+<body>
+ <!---Navigation bar--->   
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">
+		<strong><em>Itali Restaurant</em></strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navi">
+                <ul class="navbar-nav mr-auto">
+                
+            
+                    <li class="nav-item">
+	                 <a class="nav-link" href="#aboutus">About Us</a>
+	             </li>
+	            <li class="nav-item">
+	                <a class="nav-link" href="#menu-section">Menu</a>
+	            </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Our Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cancel_booking.php">Cancellation</a>
+                    </li>
+                         
+                </ul>
+            
+                  
+</nav>
+               
 <header class="header">
     <div class="row">
         <div class="col-md-12 text-center">
    <a class="logo"><img src="assets/img/italilogo.png" alt="logo"></a>
    </div>
         <div class="col-md-12 text-center">
-            <button type="button" onclick="window.location.href='reservation.php'" class="btn btn-outline-light btn-lg"><em>Book Reservation Now!</em></button>
+            <button type="button" onclick="window.location.href='#reservation'" class="btn btn-outline-light btn-lg"><em>Book Reservation Now!</em></button>
         </div>
     </div>
 </header>
@@ -237,11 +309,76 @@ Join us in celebrating the union of Italian authenticity and Dublin's vibrant sp
 
 
 
-<div class="container" id="reservation">
+<div class="container" id="reservation"><br>
+
     <h3 class="text-center"><br><br>Table Reservation<br><br></h3>
     <img  src="assets/img/picture2.png" class="img-fluid rounded">
-    <button type="button" onclick="window.location.href='reservation.php'" class="btn btn-outline-dark btn-block btn-lg">Click Here To Book Now!</button>
         
+<!-- Reservation Section -->
+<section id="reservation">
+    <div class="container">
+        <h3 class="text-center">Table Reservation</h3>
+        <p class="text-center">Reserve your table for an exquisite Italian dining experience.</p>
+
+        <form action="reservation.ic.php" method="post">
+            <div class="row">
+                <!-- Name -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="res_name">Name:</label>
+                        <input type="text" class="form-control" id="res_name" name="res_name" placeholder="Full Name" required>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="res_email">Email:</label>
+                        <input type="email" class="form-control" id="res_email" name="res_email" placeholder="Email Address" required>
+                    </div>
+                </div>
+
+                <!-- Date -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="res_date">Date:</label>
+                        <input type="date" class="form-control" id="res_date" name="res_date" required>
+                    </div>
+                </div>
+
+                <!-- Time -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="res_time">Time:</label>
+                        <input type="time" class="form-control" id="res_time" name="res_time" min="12:00" max="23:00" required>
+                    </div>
+                </div>
+
+                <!-- Number of People -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="res_people">Number of People:</label>
+                        <input type="number" class="form-control" id="res_people" name="res_people" placeholder="e.g., 4" min="1" max="10" required>
+                    </div>
+                </div>
+
+                <!-- Special Requests -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="res_requests">Special Requests:</label>
+                        <textarea class="form-control" id="res_requests" name="res_requests" rows="2" placeholder="Any special requests?"></textarea>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-dark btn-lg" name="res_submit">Reserve Table</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
 </div><br><br>
 
 <div class="header2">
@@ -255,89 +392,41 @@ Join us in celebrating the union of Italian authenticity and Dublin's vibrant sp
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4764.006457308543!2d-6.2645036413085595!3d53.343198400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670fbfb1accb11%3A0xce5ae5d496204795!2sGrafton%20Street!5e0!3m2!1sen!2sie!4v1697761167316!5m2!1sen!2sie" style= "width:100%;  height:250px; border:0;" allowfullscreen></iframe>
         <div class="row staff">
             <div class="col">
-            <h4><strong>Our Opening Hours</strong></h4>
-                       
-                <div class="signup-form">
-                    <form action="#footer" method="post">
-                        <div class="form-group">
-                            <label>Select Date</label>
-                            <input type="date" class="form-control" name="date" placeholder="Date" required="required">
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" name="check_schedule" class="btn btn-dark btn-block">Check Opening Hours</button>
-                        </div>
-                    </form>
-                    
-<?php
-
-if(isset($_POST['check_schedule'])){
-      
-require 'includes/dbh.inc.php';
-            
-$date= $_POST['date'];
- 
-    $sql = "SELECT * FROM schedule WHERE date = '$date'";
-    $result = $conn->query($sql);
-    if ($result->num_rows == 1) {
-        while($row = $result->fetch_assoc()) {
-            echo"
-                <table class='table table-sm table-striped table-dark text-center'>
-                   <thead>
-                    <tr>
-                    <th scope='col'>Date</th>
-                    <th scope='col'>Open Time</th>
-                    <th scope='col'>Close Time</th>
-                    </tr>
-                   </thead>
-                   <tbody>
-                    <tr>
-                    <th scope='row'><em>". $date . "</em></th>
-                    <td>".$row['open_time']."</td>
-                    <td>".$row['close_time']."</td>
-                    </tr>
-                   </tbody>
-                </table>";
-                }
-            }
-        else{
-         echo"
-                <table class='table table-striped table-dark text-center'>
-                   <thead>
-                    <tr>
-                    <th scope='col'>Date</th>
-                    <th scope='col'>Open Time</th>
-                    <th scope='col'>Close Time</th>
-                    </tr>
-                   </thead>
-                   <tbody>
-                    <tr>
-                    <th scope='row'><em>". $date . "</em></th>
-                    <td>12:00</td>
-                    <td>00:00</td>
-                    </tr>
-                   </tbody>
-                </table>";
-            }
-         
-   //Close of the connection
-   mysqli_close($conn);
-}
-?>
-                        
+        
                 </div><br>
             </div>
 
             <div class="col">
-            <h4 class="text-right"><strong>Visit Our Restaurant</strong></h4>
-            <p class="text-right">Itali Restaurant<br><i class="fa fa-map-marker"></i>&nbsp; 17 Grafton Street, Dublin 2, <br>Ireland.<br><br>Email: info@itali.com<br>Telephone: +353 (01) 123 4567</p>
+            <h4 class="text-center"><strong>Visit Our Restaurant</strong></h4>
+            <p class="text-center">Itali Restaurant<br><i class="fa fa-map-marker"></i>&nbsp; 17 Grafton Street, Dublin 2, <br>Ireland.<br><br>Email: info@itali.com<br>Telephone: +353 (01) 123 4567</p>
             </div>
 
 	</div>
     </div>
 </section>
 <!--End of main page map section-->
-
-
-<?php
-require "footer.php";
-?>
+<footer class="footer" id="footer">
+    <div class="container"><br>
+     <div class="row">
+       <div class="col-sm-12 text-center">
+         <div class="social-icon">
+           <a href="index.php"><i class="fa fa-facebook"></i></a>
+           <a href="index.php"><i class="fa fa-twitter"></i></a>
+           <a href="index.php"><i class="fa fa-pinterest"></i></a>
+           <a href="index.php"><i class="fa fa-rss"></i></a>
+         </div>
+               <!-- Contact info and copyright section -->
+   
+               <div class="footer-info">
+                   <br><p><i class="fa fa-phone"></i> +353 (01) 123 4567</p>
+                   <p><i class="fa fa-envelope-o"></i> info@itali.com</p>
+                   <p>Site by Dulguun Sandagsuren &copy; 2023</p>
+               </div>
+           </div>
+       </footer>
+   
+       <!-- End of footer section -->
+   
+   </body>
+   
+   </html>
