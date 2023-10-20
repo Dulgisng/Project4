@@ -155,7 +155,3 @@ Push the changes to the GitHub repository using git push command.
 Enable GitHub Pages in the repository settings.
 Choose the main branch as the source for GitHub Pages.
 Wait a few minutes for the changes to take effect.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE.md](link-to-license.md) file for details.
