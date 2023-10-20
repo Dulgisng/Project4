@@ -94,17 +94,25 @@ Basic understanding of PHP and MySQL.
 
 ## Mobile Viewing
 
+![Home](assets/img/phone1.PNG)
 
+- __About Us Section__
 
+![About](assets/img/phone2.PNG)
 
+- __Menu Section__
 
+![Menu](assets/img/phone3.PNG)
 
+![Menu](assets/img/phone4.PNG)
 
+- __Reservation Section__
 
+![Reservation](assets/img/phone5.PNG)
 
+- __Location & Map Section__
 
-
-
+![Location](assets/img/phone6.PNG)
 
 ## Testing
 
@@ -115,7 +123,6 @@ This platform has been optimised to render consistently and operate seamlessly a
 The website's design is responsive, ensuring a smooth user experience across diverse devices, including:
 
 - Desktops
-- Laptops
 - Tablets
 - Mobile phones
 
