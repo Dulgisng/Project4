@@ -65,10 +65,38 @@ Basic understanding of PHP and MySQL.
 
 ## Desktop Viewing 
 
+### Output 
+
+## Desktop Viewing 
+
+- __Home Page__
+
 ![Home](assets/img/landing.PNG)
 
+- __About Us Section__
 
 ![About](assets/img/about.PNG)
+
+- __Menu Section__
+
+![Menu](assets/img/menu.PNG)
+
+![Menu](assets/img/menuu.PNG)
+
+- __Reservation Section__
+
+![Reservation](assets/img/reservation.PNG)
+
+- __Location & Map Section__
+
+![Location](assets/img/location.PNG)
+
+## Mobile Viewing
+
+
+
+
+
 
 
 
