@@ -2,6 +2,8 @@
 require "header.php";
 ?>
 
+    <!-- Header of the webpage  contains logos and reservation links -->
+
 <header class="header">
     <div class="row">
         <div class="col-md-12 text-center">
@@ -15,14 +17,15 @@ require "header.php";
 
 
 
-<!--about us section-->
+<!--About us section-->
 
 <section id="aboutus">
 
  <div class="container">
    <h3 class="text-center"><br><br>Itali Restaurant</h3>
    <div class="row">
-<!--carousel-->
+
+<!--Carousel sliding picture show-->
      <div class="col-sm"><br><br>
       	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
          <ol class="carousel-indicators">
@@ -52,8 +55,9 @@ require "header.php";
        </div><br><br>
      </div>
 
-<!--end of carousel-->
+<!--End of the carousel-->
 
+<!--About us section-->
      <div class="col-sm">
     	<div class="arranging"><br><hr>
 	<h4 class="text-center">Our Mission & Story</h4>
@@ -71,7 +75,7 @@ Join us in celebrating the union of Italian authenticity and Dublin's vibrant sp
     </div><br>
   </div>
 </section>
-<!--end of about us section-->
+<!--End of about us section-->
 
 <div class="header2">
 </div>
@@ -244,7 +248,7 @@ Join us in celebrating the union of Italian authenticity and Dublin's vibrant sp
 
 </div>
 
-<!-- main page map section-->
+<!-- Main page map section-->
 <section class="map" id="footer">
     <div class="container">
     <h3 class="text-center"><br><br>Our Location</h3><br>
@@ -315,7 +319,7 @@ $date= $_POST['date'];
                 </table>";
             }
          
-   //close connection
+   //Close of the connection
    mysqli_close($conn);
 }
 ?>
@@ -331,7 +335,7 @@ $date= $_POST['date'];
 	</div>
     </div>
 </section>
-<!--end of main page map section-->
+<!--End of main page map section-->
 
 
 <?php
