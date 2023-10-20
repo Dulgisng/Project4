@@ -1,0 +1,183 @@
+/* Reset Styles */
+* {
+	/* Universal reset for margin, padding, and font family */
+	margin: 0;
+	padding: 0;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+	    /* Prevent horizontal overflow */
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/* Typography */
+h3 {
+	    /* Add shadow to h3 text */
+	text-shadow: 1px 2px rgba(128, 128, 128, 0.5);
+}
+
+/* Header Styles */
+.header, .header2 {
+	    /* Universal background properties for headers */
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header {
+	    /* Header with a gradient overlay on top of a background image */
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/background.png);
+	height: 85vh;
+}
+
+.header2 {
+	    /* Secondary header with a gradient overlay, different image, and fixed attachment */
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/picture5.jpg);
+	height: 45vh;
+	background-attachment: fixed;
+}
+
+/* Navbar Styles */
+.navbar {
+	    /* Navbar with shadow */
+	background: #FFF;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+	font-family: "Brush Script MT", cursive;
+}
+
+.navbar .navbar-nav .nav-item {
+	border-bottom: 1px solid transparent;
+}
+
+.navbar .navbar-nav .nav-item.active {
+	border-bottom-color: #FFF;
+}
+
+.navbar .navbar-nav .nav-item a {
+	color: #3A3B3B;
+	transition: background-color 0.3s;
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+	background-color: #f0ecec;
+	color: #000;
+}
+
+.row {
+	margin: 15px 0;
+}
+
+.nav-link {
+	cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+	padding: 30px 0;
+	color: #000;
+}
+
+.social-icon {
+	text-align: center;
+}
+
+.social-icon a {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.social-icon .fa {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	width: 50px;
+	height: 50px;
+	background-color: #f0f0f0;
+	border-radius: 50%;
+	transition: border-color 0.3s;
+	border: 8px solid #f0f0f0;
+}
+
+.social-icon a:hover .fa {
+	border-color: #3A3B3B;
+}
+
+.bordernow {
+	width: 90px;
+	border-bottom: 2px solid #FFF;
+	margin: 20px auto 0;
+}
+
+/* Style for the Menu Section */
+
+#menu-section {
+	    /* Background color and padding for menu section */
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.category-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center;
+}
+
+.menu-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.menu-img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.menu-item h5 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #777;
+    flex-grow: 1;
+}
+
+.menu-item span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu-img {
+    width: 100px;        
+    height: 100px;       
+    margin-right: 20px;
+    object-fit: cover;   
+    display: block;      
+    border-radius: 5px;  
+}
+
+.carousel-inner img {
+	    /* Ensure carousel images have a uniform height and cover the slide */
+    height: 600px;  
+    object-fit: cover;  
+    width: 100%; 
+}
