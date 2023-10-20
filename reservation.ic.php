@@ -30,19 +30,34 @@ if(isset($_POST['res_submit'])) {
     $people = $_POST['res_people'];
     $requests = $_POST['res_requests'];
 
-    // SQL query to insert the reservation into the database
-    $sql = "INSERT INTO reservations (name, email, date, time, people, requests) VALUES (?, ?, ?, ?, ?, ?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssssis", $name, $email, $date, $time, $people, $requests);
-    
-    // Execute the query and check if it's successful
-    if($stmt->execute()) {
-        // If successful, display a success message and then redirect to the homepage
-        echo "Your reservation has been booked successfully!";
+    // Check for existing reservations
+    $check_sql = "SELECT * FROM reservations WHERE date = ? AND time = ?";
+    $check_stmt = $conn->prepare($check_sql);
+    $check_stmt->bind_param("ss", $date, $time);
+    $check_stmt->execute();
+    $result = $check_stmt->get_result();
+
+    if($result->num_rows > 0) {
+        // If a reservation exists, display a message and exit
+        echo "Sorry, this time slot is already booked. Please choose a different time.";
         header("Refresh: 3; url=index.html");
     } else {
-        echo "Error, your reservation can not be booked!" . $conn->error;
+        // SQL query to insert the reservation into the database
+        $sql = "INSERT INTO reservations (name, email, date, time, people, requests) VALUES (?, ?, ?, ?, ?, ?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("ssssis", $name, $email, $date, $time, $people, $requests);
+        
+        // Execute the query and check if it's successful
+        if($stmt->execute()) {
+            // If successful, display a success message and then redirect to the homepage
+            echo "Your reservation has been booked successfully!";
+            header("Refresh: 3; url=index.html");
+        } else {
+            // If there's an error, display it
+            echo "Error, your reservation can not be booked!" . $conn->error;
+        }
     }
+
 }
 
 // Close the database connection

@@ -66,11 +66,6 @@ Basic understanding of PHP and MySQL.
 5. Adjust the database connection configurations as needed.
 6. Launch on either a local web server or an external hosting service.
 
-
-### Output 
-
-## Desktop Viewing 
-
 ### Output 
 
 ## Desktop Viewing 
@@ -99,22 +94,6 @@ Basic understanding of PHP and MySQL.
 
 ## Mobile Viewing
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Mobile Viewing
 
 
 
