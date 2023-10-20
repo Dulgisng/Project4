@@ -181,3 +181,40 @@ h3 {
     object-fit: cover;  
     width: 100%; 
 }
+
+/* Mobile optimizations using Media Queries */
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 50vh;
+    }
+
+    .header2 {
+        height: 35vh;
+    }
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .carousel-inner img {
+        height: 400px;
+    }
+
+    #menu-section {
+        padding: 20px 0;
+    }
+
+    .menu-category {
+        margin-bottom: 20px;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
