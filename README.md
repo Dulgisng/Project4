@@ -21,10 +21,16 @@ The digitalisation of restaurants has become a pivotal aspect of modern dining e
 3. Select your preferred date, time, and number of guests.
 4. Hit "Reserve Table" and you're all set!
 
+
+![Reservation](assets/img/example.PNG)
+
 **To cancel a reservation**:
 1. Navigate to the "Cancellation" section on the navigation menu.
 2. Enter the email address used during booking.
 3. Select the booking you wish to cancel.
+
+![Reservation](assets/img/cancellation.PNG)
+
 
 ### Features Left to Implement
 
