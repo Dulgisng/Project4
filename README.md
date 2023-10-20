@@ -1,17 +1,6 @@
 # Itali Restaurant Web Application
 
-This repository contains the source code and documentation for the web application of "Itali Restaurant", an online platform designed to explore, analyze, and understand the dynamics of restaurant table reservations, user interactions, and data handling for Italian cuisine.
-
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Database Schema](#database-schema)
-4. [Getting Started](#getting-started)
-5. [Testing](#testing)
-6. [Contributing](#contributing)
-7. [Contact](#contact)
-8. [License](#license)
+This repository contains the source code and documentation for the web application of "Itali Restaurant", an online website designed to understand the dynamics of restaurant table reservations, user interactions, and data handling for Italian cuisine.
 
 ## Introduction
 
@@ -22,7 +11,7 @@ The digitalisation of restaurants has become a pivotal aspect of modern dining e
 - **Table Reservations**: Users can make, view, and modify their table reservations.
 - **Cancellation**: Dynamic cancellation options integrated with real-time database updates.
 - **Menu Viewer**: A detailed view of available Italian dishes, detailed descriptions, and pricing.
-- **Contact**: Users have the capability to access contact information, observe social media symbols, view the establishment's location on a map, and peruse the 'About' section.
+- **Contact**: Users have the capability to access contact information, observe social media symbols, view the establishment's location on a map, and peruse the 'About Us' section.
 
 ## Key Features of the Table Reservation System:
 
@@ -74,14 +63,59 @@ Basic understanding of PHP and MySQL.
 
 ### Output 
 
+## Desktop Viewing 
+
+![Home](assets/img/landing.PNG)
+
+
+![About](assets/img/about.PNG)
+
+
+
+
+
+
+
+
+
+
+
+## Mobile Viewing
+
+
+
+
+
+
+
+
+
+
+
 
 ## Testing
 
+**Browser Compatibility:**  
+This platform has been optimised to render consistently and operate seamlessly across a range of web browsers.
 
+**Device Responsiveness:**  
+The website's design is responsive, ensuring a smooth user experience across diverse devices, including:
+
+- Desktops
+- Laptops
+- Tablets
+- Mobile phones
+
+**Manual Page Inspection:**  
+Each page has been  examined to ensure its intended functionality.
+
+**Operational Assurance:**  
+All hyperlinks, interactive buttons, and form elements have been verified to be fully functional.
 
 ### Validator Testing 
 
 No HTML errors were found when passing through the official [HTML Validator](https://validator.w3.org)
+
 No CSS errors were found when passing through the official [CSS Validator](https://jigsaw.w3.org/css-validator)
 
 ### Unfixed Bugs
