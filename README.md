@@ -1,6 +1,6 @@
 # Itali Restaurant Web Application
 
-This repository contains the source code and documentation for the web application of "Itali Restaurant", an online website designed to understand the dynamics of restaurant table reservations, user interactions for Italian cuisine.
+This repository contains the source code and documentation for the web application of "Itali Restaurant", an online website designed to understand the dynamics of restaurant user interactions for Italian cuisine.
 
 ## Introduction
 
