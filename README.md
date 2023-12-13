@@ -1,58 +1,19 @@
 # Itali Restaurant Web Application
 
-This repository contains the source code and documentation for the web application of "Itali Restaurant", an online website designed to understand the dynamics of restaurant table reservations, user interactions, and data handling for Italian cuisine.
+This repository contains the source code and documentation for the web application of "Itali Restaurant", an online website designed to understand the dynamics of restaurant table reservations, user interactions for Italian cuisine.
 
 ## Introduction
 
-The digitalisation of restaurants has become a pivotal aspect of modern dining experiences. This web application seeks to delve into this domain, offering functionalities that demonstrate the intricacies of web-based software for the hospitality industry, specifically tailored for Italian culinary establishments. The Table Reservation System serves as the centerpiece of this web application. This application provides a seamless experience for patrons who wish to secure a spot at their favorite Italian restaurant without any hassles.
+The digitalisation of restaurants has become a pivotal aspect of modern dining experiences. This web application seeks to delve into this domain, offering functionalities that demonstrate the intricacies of web-based software for the hospitality industry, specifically tailored for Italian culinary establishments.
 
 ## Features
 
 - **Table Reservations**: Users can make, view, and modify their table reservations.
-- **Cancellation**: Dynamic cancellation options integrated with real-time database updates.
 - **Menu Viewer**: A detailed view of available Italian dishes, detailed descriptions, and pricing.
 - **Contact**: Users have the capability to access contact information, observe social media symbols, view the establishment's location on a map, and peruse the 'About Us' section.
 
-## Key Features of the Table Reservation System:
-
-**To reserve a table**:
-1. Head to our "Reservations" section on the navigation menu.
-2. Fill out your details.
-3. Select your preferred date, time, and number of guests.
-4. Hit "Reserve Table" and you're all set!
 
 
-![Reservation](assets/img/example.PNG)
-
-**To cancel a reservation**:
-1. Navigate to the "Cancellation" section on the navigation menu.
-2. Enter the email address used during booking.
-3. Select the booking you wish to cancel.
-
-![Reservation](assets/img/cancellation.PNG)
-
-
-### Features Left to Implement
-
-Waitlist System: If a desired reservation time is unavailable, offer users the ability to join a waitlist. They would be notified if a table becomes available.
-
-Loyalty Programs: Implement a reward system where users earn points for each reservation, which can then be redeemed for discounts or free meals.
-
-Integrated Payments: Allow users to pay for their meals in advance, especially useful for events or special dinners.
-
-Feedback and Review System: Post-dining, users can leave feedback or reviews about their experience, helping the restaurant to continuously improve.
-
-
-## Database Schema
-
-The primary table, `reservations`, holds records of user reservations with fields such as `id`, `name`, `email`, `date`, `time`, `people`, and `requests`.
-
-## Getting Started
-
-### Prerequisites
-
-Install XAMPP or WAMP based on your preference.
-Basic understanding of PHP and MySQL.
 
 ### Installation
 
