@@ -8,24 +8,9 @@ The digitalisation of restaurants has become a pivotal aspect of modern dining e
 
 ## Features
 
-- **Table Reservations**: Users can make, view, and modify their table reservations.
+- **Table Reservations**: Users can request to make their table reservations.
 - **Menu Viewer**: A detailed view of available Italian dishes, detailed descriptions, and pricing.
 - **Contact**: Users have the capability to access contact information, observe social media symbols, view the establishment's location on a map, and peruse the 'About Us' section.
-
-
-
-
-### Installation
-
-1. Get a copy of the repository:  
-   `git clone https://github.com/Dulgisng/Restaurant_Reservation_Project_4`
-2. Move to the downloaded project folder.
-3. Launch `http://localhost/phpmyadmin` in your preferred web browser.
-4. Initiate the database using the given structure.
-   - Generate a new database named "reservations"
-   - Import the provided sql file (`data.sql`) from the project.
-5. Adjust the database connection configurations as needed.
-6. Launch on either a local web server or an external hosting service.
 
 ### Output 
 
